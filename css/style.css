@@ -1,0 +1,24 @@
+h1 {
+  color: red;
+}
+
+#introducao{
+  color: gold;
+}
+
+.codigo{
+  color: orange;
+
+}
+
+.design{
+  color: red;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.grande{
+  font-size: 32px;
+}
