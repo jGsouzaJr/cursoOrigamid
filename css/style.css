@@ -39,7 +39,7 @@ a{
   font-size: 30px;
 } */
 
-div{
+/* div{
   font-size: 3rem;
   background: #f56;
   width: 320px;
@@ -55,5 +55,22 @@ h1{
   width: 200px;
   border: 4px solid black;
   margin: 20px;
+
+} */
+
+.padding{
+  width: 300px;
+  background: blue;
+  color: white;
+  /* padding: 30px; todos os lados estão com esse valor */
+  /* padding-top: 30px; somente o top está com esse valor */
+  /* padding-right: 300px; somente o right está com esse valor */
+  /* padding-bottom: 30px; somente o bottom está com esse valor */
+  /* padding-left: 30px; somente o left está com esse valor */
+  
+  /* padding: 30px 20px  50px 60px; aqui os valores estão individuais começando pelo top right bottom left */
+  
+  padding: 30px;
+
 
 }
