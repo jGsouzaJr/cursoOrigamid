@@ -27,8 +27,8 @@ h1{
 
   background: #f00;
   /* color: black; */
-  /* color: #000; */
-  /* color: rgb(0,0,0); */
+/* color: #000; */
+/* color: rgb(0,0,0); */
 /*  color: rgba(0,0,0, .5);
 
 } 
@@ -58,19 +58,55 @@ h1{
 
 } */
 
-.padding{
+/* .padding{
   width: 300px;
   background: blue;
   color: white;
   /* padding: 30px; todos os lados estão com esse valor */
-  /* padding-top: 30px; somente o top está com esse valor */
-  /* padding-right: 300px; somente o right está com esse valor */
-  /* padding-bottom: 30px; somente o bottom está com esse valor */
-  /* padding-left: 30px; somente o left está com esse valor */
-  
-  /* padding: 30px 20px  50px 60px; aqui os valores estão individuais começando pelo top right bottom left */
-  
-  padding: 30px;
+/* padding-top: 30px; somente o top está com esse valor */
+/* padding-right: 300px; somente o right está com esse valor */
+/* padding-bottom: 30px; somente o bottom está com esse valor */
+/* padding-left: 30px; somente o left está com esse valor */
+
+/* padding: 30px 20px  50px 60px; aqui os valores estão individuais começando pelo top right bottom left */
+
+/* padding: 30px; 
 
 
+ } */
+.container {
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.container h1 {
+  text-align: center;
+}
+
+.grid h2 {
+  margin-top: 0;
+}
+
+.item {
+  background: #f7f7f7;
+  border: 1px solid #e7e7e7;
+  /* margin-bottom: 20px; */
+  padding: 30px;
+  border-radius: 4px;
+
+  display: grid;
+  
+}
+ .comprar{
+  background: #a8f;
+  padding: 10px 20px;
+  color: #103;
+  text-decoration: none;
+  border-radius: 4px;
+
+ }
+
+ .grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* divisão de colunas*/
+  gap: 10px;
+ }
