@@ -1,0 +1,16 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 40px;
+}
+
+h1{
+  
+}
+
+.comprar{
+  background: #a8e;
+  color: #102;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
