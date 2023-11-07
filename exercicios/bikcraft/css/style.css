@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif; 
+  background: #f7f7f7;
+  /* correção */
+  margin-top: 60px;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+
+/* header{
+  
+   após correção percebi que não era necessário
+   tais propriedades
+  
+   display: flex; 
+   justify-content: center; 
+   padding: 30px; 
+} */
+
+
+p{
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* correção */
+  flex-wrap: wrap;
+
+  
+}
+
+.menu a{
+  color: #222;  
+
+}
+a{
+  display: inline-block;
+  padding: 15px 30px;
+  background: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.container{
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+  /* margin: 0 auto; */
+}
+
+.principal{
+  display: grid;
+  gap: 20px;
+  /* place-content: center; */
+  text-align: right;  
+  padding:40px;
+  background: #fff;
+  /* correção */
+  position: relative;
+  align-content: center;
+  justify-items: end;
+
+  
+}
+/* correção */
+.detalhe{  
+  width: 60px;
+  height: 4px;
+  background: #f00;
+  position: absolute;
+  right: -30px;
+  top: 30px;
+}
+/* fim da correção */
+
+.vermais{
+  /* margin-top: 10px; */
+  background: #ee2211;
+  color: #eee;
+  justify-self: end;
+}
+
+
+
+img{
+  display: block;
+  max-width: 100%;
+}
+.subtitulo{
+  font-size: 64px;
+  padding: 40px;
+  text-align: right;
+  align-self: center;
+  color: rgba(0,0,0,.3)
+}
+
+
+.vantagens{
+  background: #fff;
+  padding: 40px;
+}
+
+.vantagensItens{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.vantagensItens p{
+  grid-column: 2;
+}
+
+footer{
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
