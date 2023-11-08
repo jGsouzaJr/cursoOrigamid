@@ -1,3 +1,9 @@
-.ativo a{
+/* .ativo a{
   color:  white;
+} */
+.subtexto{
+  display: none;
+}
+.mostrar{
+  display: block;
 }
