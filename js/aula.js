@@ -80,10 +80,13 @@ function logCurso(){
 
 logCurso()
 
+// Eventos: são funções quando acontece algo na maior parte que o cliente faz, executa um bloco de código.
 
+const btn = document.querySelector('.btn')
 
-
-
-
-
-
+/** @param {MouseEvent} event */
+function backg(event){
+//  console.log(event.x) 
+console.log(event.currentTarget) 
+}
+btn.addEventListener('click', backg)
