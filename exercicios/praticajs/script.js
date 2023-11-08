@@ -29,7 +29,7 @@ function livro(nome, ano, autor, anoAtual){
     nome: nome.toUpperCase(),
     ano,
     tempo: `${anoAtual - ano}`,
-    frase:`Livro escrito ${nome} por ${autor}`,
+    frase:`Livro ${nome} escrito por ${autor}`,
   }  
 }
 
