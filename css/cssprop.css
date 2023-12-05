@@ -1,0 +1,101 @@
+.tipografia{
+  font-size: 3rem; /* tamanho da fonte*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Tipografia */
+  font-weight: bold; /* peso da fonte*/
+  font-style: italic; /*estilo da fonte, não é a mesma coisa que peso*/
+  line-height: 1.2; /* altura de linha*/
+  text-decoration: underline; /*faz decoração no texto*/
+  text-transform: uppercase; 
+  text-indent: 2rem; /* recuo de paragráfo*/
+  text-align: left; /*aliamento do texto*/
+  /* text-shadow: 12px 25px 25px gray; sombra */
+  letter-spacing: 0.5rem;
+}
+
+.background{
+  height: 600px;
+  background: url(assets/bicicleta.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+}
+
+.background h1{
+  margin: auto;
+  background: white;
+  padding: 1rem;
+}
+
+.clique{
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #caf;
+  color: #217;
+  padding: 15px 16px;
+  transition: 0.3s;
+}
+
+/* .clique:hover{
+  background: #217;
+  color: #caf;
+} */
+
+.clique:focus{
+  background: #cfa;
+  color: #371;
+}
+
+.clique:active{
+  background: #fa2;
+  color: #f93;
+}
+
+.clique:visited{
+  background: red;
+  color: white;
+}
+
+ol{
+  list-style: none;
+}
+
+/* seleciona todos */
+.lista-1 li{
+  background: #f93;
+}
+
+/* apenas o primeiro */
+.lista-1 li:first-child{
+  background: #caf;
+}
+
+/* apenas o último */
+.lista-1 li:last-child{
+  background: #caf;
+}
+
+/* especifico */
+.lista-1 li:nth-child(3){
+  background: #caf;
+}
+/* somente os pares */
+.lista-2 li:nth-child(even){
+  color: #371;
+}
+
+/* somente os ímpares */
+.lista-2 li:nth-child(odd){
+  background: #371;
+  color: #fff;
+}
+
+/* intervalos neste exemplo está de 4 em 4*/
+.lista-2 li:nth-child(4n){
+  color: #fa2;
+}
+
+/* seletor de negação, no exemplo o quinto e primeiro elemento não recebe o background */
+.lista-2 li:not(:nth-child(5), :first-child){
+  background: #000;
+}
