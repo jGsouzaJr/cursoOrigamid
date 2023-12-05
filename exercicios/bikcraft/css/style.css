@@ -25,7 +25,6 @@ body{
    padding: 30px; 
 } */
 
-
 p{
   font-size: 20px;
   line-height: 1.3;
@@ -36,15 +35,24 @@ nav{
   gap: 20px;
   justify-content: center;
   /* correção */
-  flex-wrap: wrap;
-
-  
+  flex-wrap: wrap;  
 }
 
 .menu a{
-  color: #222;  
-
+  color: #222;
 }
+
+.menu a:hover {
+  padding: 13px 28px;
+  border: 2px solid #ee2211;  
+}
+
+.menu a:focus{
+  padding: 13px 28px;
+  border: 2px solid #ee2211; 
+  outline: none;
+}
+
 a{
   display: inline-block;
   padding: 15px 30px;
@@ -71,11 +79,10 @@ a{
   position: relative;
   align-content: center;
   justify-items: end;
-
-  
 }
-/* correção */
-.detalhe{  
+
+.principal h1::before{
+  content: '';
   width: 60px;
   height: 4px;
   background: #f00;
@@ -83,7 +90,6 @@ a{
   right: -30px;
   top: 30px;
 }
-/* fim da correção */
 
 .vermais{
   /* margin-top: 10px; */
@@ -92,13 +98,21 @@ a{
   justify-self: end;
 }
 
+.vermais:hover{
+  background: #991100;
+}
 
+.vermais:focus{
+  background: #991100;
+}
 
 img{
   display: block;
   max-width: 100%;
 }
+
 .subtitulo{
+  background: url(/exercicios/bikcraft/assets/img/onda.svg);
   font-size: 64px;
   padding: 40px;
   text-align: right;
@@ -106,10 +120,16 @@ img{
   color: rgba(0,0,0,.3)
 }
 
-
 .vantagens{
   background: #fff;
   padding: 40px;
+}
+.vantagens div:not(:nth-last-child(2)){
+  background: #f7f7f7;
+
+}
+.vantagensItens:hover{ 
+  border-left: 3px solid #ee2211;
 }
 
 .vantagensItens{
@@ -122,6 +142,7 @@ img{
 .vantagensItens p{
   grid-column: 2;
 }
+
 
 footer{
   background: #fff;
