@@ -32,14 +32,19 @@ p{
 
 nav{
   display: flex;
-  gap: 20px;
   justify-content: center;
   /* correção */
-  flex-wrap: wrap;  
 }
 
 .menu a{
   color: #222;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;  
+  list-style: none;
 }
 
 .menu a:hover {
