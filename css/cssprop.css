@@ -99,3 +99,31 @@ ol{
 .lista-2 li:not(:nth-child(5), :first-child){
   background: #000;
 }
+
+/* antes do elemento */
+h3::before{
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background: #000;
+  margin: 5px;
+}
+
+/* depois do elemento */
+h3::after{
+  content: ' afixo';
+}
+
+/* seleciona a primeira linha */
+.lobo::first-line{
+  background: #371;
+}
+
+/* seleciona a primeira letra */
+.lobo::first-letter{
+  color: #F00;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px;
+}
