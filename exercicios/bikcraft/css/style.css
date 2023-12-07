@@ -41,6 +41,7 @@ nav{
   gap: 1.25rem; /* 20px */
   flex-wrap: wrap;  
   list-style: none;
+  justify-content: center;
 }
 .menu a{
   color: #222;
@@ -116,9 +117,12 @@ a{
   background: #991100;
 }
 
-img{
+.cover img{
   display: block;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top right;
 }
 
 .subtitulo{
@@ -127,7 +131,8 @@ img{
   padding: 2.5rem; /*40px*/
   text-align: right;
   align-self: center;
-  color: rgba(0,0,0,.3)
+  color: rgba(0,0,0,.3);
+  /* word-break: break-all; */
 }
 
 .vantagens{
@@ -159,4 +164,29 @@ footer{
   width: 100%;
   text-align: center;
   padding: 2.5rem; /*40px*/
+}
+
+/* 1000px */
+@media(max-width: 62.5rem){
+  .article-mobile{
+    grid-template-columns: 1fr;
+  }
+  .subtitulo{
+    text-align: center;
+  }  
+
+}
+/* 620 px */
+@media(max-width: 38.75rem){
+  body{
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  header{
+    gap: 10px;
+  }
+  .subtitulo{
+    font-size: 2rem;
+  }
 }
